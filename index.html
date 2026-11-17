@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Resume website of Pushkar Gupta, IIM Bangalore BBA DBE student.">
+<title>Pushkar Gupta | Resume</title>
+<style>
+:root{
+  --bg:#242424; --panel:#2d2d2d; --panel2:#333333;
+  --rose:#E0A9A7; --taupe:#A39E93; --text:#F4F1EE; --muted:#C2BCB5;
+  --line:rgba(224,169,167,.22);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.container{width:min(1050px,90%);margin:auto}
+header{position:sticky;top:0;z-index:5;background:rgba(36,36,36,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:800;letter-spacing:.4px;color:var(--rose);font-size:1.1rem}
+.navlinks{display:flex;gap:24px;flex-wrap:wrap}
+.navlinks a{font-size:.92rem;color:var(--muted)}
+.navlinks a:hover{color:var(--rose)}
+.hero{padding:100px 0 78px;display:grid;grid-template-columns:1.5fr .8fr;gap:45px;align-items:center}
+.eyebrow{color:var(--taupe);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(2.8rem,7vw,5.2rem);line-height:1.05;margin:14px 0;color:var(--rose);letter-spacing:-2px}
+.hero p{max-width:620px;color:var(--muted);font-size:1.08rem}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:11px 18px;border-radius:8px;font-weight:700;border:1px solid var(--rose);transition:.2s}
+.btn.primary{background:var(--taupe);color:#242424}
+.btn.secondary{color:var(--rose)}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.profile-card{background:linear-gradient(145deg,#343230,#292929);border:1px solid var(--line);border-radius:20px;padding:30px;text-align:center;box-shadow:0 18px 45px rgba(0,0,0,.18)}
+.avatar{width:112px;height:112px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;background:rgba(224,169,167,.12);border:1px solid var(--rose);color:var(--taupe);font-size:2.5rem;font-weight:800}
+.profile-card h2{color:var(--rose);margin:0;font-size:1.35rem}
+.profile-card p{font-size:.92rem;margin:5px 0;color:var(--muted)}
+section{padding:60px 0;border-top:1px solid var(--line)}
+.section-title{color:var(--rose);font-size:1.8rem;margin:0 0 24px}
+.about{max-width:790px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:23px}
+.card h3{margin:0 0 8px;color:var(--taupe);font-size:1.12rem}
+.card p{margin:5px 0;color:var(--muted)}
+.meta{font-size:.9rem;color:var(--taupe)!important}
+.skills{display:flex;flex-wrap:wrap;gap:12px}
+.skill{border:1px solid var(--line);background:var(--panel);color:var(--text);padding:10px 16px;border-radius:999px}
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.contact-item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:17px}
+.contact-item span{display:block;color:var(--taupe);font-size:.82rem;margin-bottom:4px}
+.contact-item a{color:var(--rose);overflow-wrap:anywhere}
+footer{padding:28px 0;text-align:center;color:var(--muted);font-size:.9rem}
+@media(max-width:720px){
+ nav{padding:14px 0;align-items:flex-start;flex-direction:column}
+ .navlinks{gap:14px}
+ .hero{padding:65px 0 50px;grid-template-columns:1fr}
+ .profile-card{max-width:360px}
+ .grid,.contact-grid{grid-template-columns:1fr}
+ section{padding:45px 0}
+}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#home">PUSHKAR GUPTA</a>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#education">Education</a>
+        <a href="#skills">Skills</a><a href="#projects">Project</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section class="hero" id="home" style="border:0">
+      <div>
+        <div class="eyebrow">Student • India</div>
+        <h1>Pushkar<br>Gupta</h1>
+        <p>BBA student at the Indian Institute of Management Bangalore, pursuing Digital Business and Entrepreneurship. Interested in building digital skills and exploring web development.</p>
+        <div class="actions">
+          <a class="btn primary" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <aside class="profile-card">
+        <div class="avatar">PG</div>
+        <h2>Pushkar Gupta</h2>
+        <p>BBA (Digital Business &amp; Entrepreneurship)</p>
+        <p>Indian Institute of Management Bangalore</p>
+        <p>India</p>
+      </aside>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p class="about">I am currently pursuing a BBA in Digital Business and Entrepreneurship at the Indian Institute of Management Bangalore. I have a foundation in Microsoft Word and Excel, and I am learning web development. I am keen to keep learning, develop practical skills, and work on meaningful digital projects.</p>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Indian Institute of Management Bangalore</h3>
+          <p>BBA in Digital Business and Entrepreneurship</p>
+          <p class="meta">Currently pursuing</p>
+        </article>
+        <article class="card">
+          <h3>Class XII — CBSE</h3>
+          <p>Commerce with Mathematics</p>
+          <p class="meta">2024</p>
+        </article>
+        <article class="card">
+          <h3>Class X — CBSE</h3>
+          <p class="meta">2022</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills">
+        <span class="skill">Microsoft Word</span>
+        <span class="skill">Microsoft Excel</span>
+        <span class="skill">Web Development</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Project</h2>
+      <article class="card">
+        <h3>Personal Portfolio Website</h3>
+        <p>Created a personal portfolio website as a first web development project.</p>
+        <p class="meta">Personal project</p>
+      </article>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-item"><span>Email</span><a href="mailto:pushkargupta8920@gmail.com">pushkargupta8920@gmail.com</a></div>
+        <div class="contact-item"><span>Location</span><div>India</div></div>
+        <div class="contact-item"><span>Institute</span><div>IIM Bangalore</div></div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer><div class="container">© <span id="year"></span> Pushkar Gupta · Resume Website</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
